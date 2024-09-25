@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.welcome-banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background: linear-gradient(135deg, #eaeaea 25%, #d1d1d1 75%);
+    perspective: 1px;
+}
+
+.welcome-banner h1, .welcome-banner p {
+    position: relative;
+    z-index: 2;
+    color: #333;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    backface-visibility: hidden;
+    animation: floatText 5s infinite ease-in-out;
+}
+
+.welcome-banner h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+}
+
+.welcome-banner p {
+    font-size: 22px;
+    color: #666;
+    font-style: italic;
+}
+
+.welcome-banner h1:hover, .welcome-banner p:hover {
+    transform: scale(1.1) rotate(-1deg);
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: particleMove 7s ease-in-out infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+.particle.popped {
+    animation: popBubble 0.6s ease forwards; /* Soap bubble pop animation */
+    background-color: transparent; /* Make the bubble transparent during pop */
+    box-shadow: none; /* Remove the glow effect on pop */
+    transform: scale(1); /* Start scaling at 1 */
+    opacity: 0;
+}
+@keyframes particleMove {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    100% {
+        transform: translateY(-1000px) translateX(200px);
+    }
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes bubbleExpand {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+
+/* Score display */
+.score-display {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+/* Pulse effect for score display */
+.pulse {
+    animation: pulseEffect 0.3s ease;
+}
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Easter egg unlocked visual effect */
+.welcome-banner.easter-egg-unlocked {
+    background-color: #ffd700; /* Golden background when Easter egg is unlocked */
+    transition: background-color 1s ease;
+}
+
+
+/* .welcome-banner:hover::before {
+    background: linear-gradient(135deg, rgba(237, 238, 255, 0.6), rgba(255, 255, 255, 0.6)); 
+} */
+/* Apply MITAOE official color */
+.mitaoe {
+    color: #0071BC; 
+    font-weight: bold;
+}
+.reg-update{
+    color: #5b00bcc4;
+    font-weight: bold;
+}
+
+/* Container styles */
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    border-top: 2px solid #cccccc;
+    margin: 30px 30px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px; 
+    flex-wrap: wrap;
+}
+
+.about-us-image {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.about-us-content {
+    flex: 2;
+    max-width: 60%;
+    color: #333;
+}
+
+.about-us-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-us-content p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Stats container */
+.about-us-followers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Stat titles */
+.about-us-followers-item h3 {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #4733ff; /* New color for stat titles */
+}
+
+/* Stat counts */
+.about-us-followers-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d97c7ce; /* New color for stat counts */
+}
+
+.about-us-content p:last-of-type {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+/* our porfolio */
+.portfolio-body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 30px 70px 30px;
+}
+.portfolio-body h3 {
+    color: #365374;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.portfolio-body h2 {
+    color:#555;
+    font-size: 2.5em;
+}
+
+.project-card-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    overflow-x:visible;
+}
+
+.card-col a img {
+    height: 200px;
+    width: auto;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+
+.card-col a img:hover {
+    transform: scale(1.05);
+}
+
+.scroll-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#prev,
+#next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #007CBE;
+    background-color: #D4FD5C;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#prev:hover,
+#next:hover {
+    color: #D4FD5C;
+    background-color: #007CBE;
+}
+.portfolio-body .highlight1 {
+    color: #75439e; 
+}
+.portfolio-body .highlight2 {
+    color: #007CBE; 
+}

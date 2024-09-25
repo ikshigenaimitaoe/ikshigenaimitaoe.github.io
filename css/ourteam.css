@@ -1,0 +1,238 @@
+body {
+    background: rgb(215, 255, 245);
+    background: linear-gradient(11deg, rgba(215, 255, 245, 1) 10%, rgba(215, 255, 245, 0.6131244734221813) 45%, rgba(215, 255, 245, 1) 75%);
+}
+
+.our-team-wellcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #75439e8c;
+    margin: 100px 50px 50px 50px;
+    text-align: center;
+}
+
+.our-team-wellcome h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to left, rgb(55, 55, 55), rgb(165, 165, 165));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.our-team-wellcome p {
+    font-size: 21px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.team-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    margin: 40px 50px;
+    text-align: center;
+}
+
+.team-overview-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 40px 0 70px 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#team-overview-title {
+    font-size: 2.5em;
+    background: linear-gradient(to right, rgb(55, 55, 55), rgb(205, 205, 205));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.team-overview-content {
+    font-size: 1.4em;
+    line-height: 1.5;
+    color: rgb(76, 76, 76);
+    text-align: center;
+}
+
+.team-overview-image img {
+    width: auto;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.faculty-guide-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 20px 50px 20px;
+}
+
+.faculty-guide-team h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    background: linear-gradient(to left, rgb(55, 55, 55), rgb(165, 165, 165));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-guide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.guide-profile img {
+    margin-top: 10px;
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #75439eb7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+        10px 10px 20px rgba(0, 0, 0, 0.2),
+        15px 15px 25px rgba(0, 0, 0, 0.1);
+    animation: border-shine 5s linear infinite;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.guide-profile img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@keyframes border-shine {
+    0% {
+        border-color: #5b2d81b7;
+    }
+
+    50% {
+        border-color: #dbafff;
+    }
+
+    100% {
+        border-color: #5b2d81b7;
+    }
+}
+
+.guide-in-profile a img {
+    width: auto;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.guide-name p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.guide-intro {
+    max-width: 65%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.guide-intro p {
+    font-size: 19px;
+}
+
+/* Three columns side by side */
+.row {
+    margin: 70px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    border-top:1px solid rgb(195, 195, 195);
+    padding-top: 50px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 0 8px;
+    padding: 20px;
+    height: auto;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    border-radius: 30px;
+}
+
+.card img {
+    border-radius: 30px;
+    height: 350px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 20px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.button {
+    align-items: center;
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.logo a{
+    font-family: 'Kodchasan';
+}
+.logo img{
+    width:auto;
+    height: 30px;
+    align-self: center;
+}
+
+body {
+    background: rgb(215, 255, 245);
+    background: linear-gradient(11deg, rgba(215, 255, 245, 1) 10%, rgba(215, 255, 245, 0.6131244734221813) 45%, rgba(215, 255, 245, 1) 75%);
+    margin: 0;
+    font-family: Poppins;
+    font-size: 13px;
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 153, 255, 0.218);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo a {
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    background: rgb(230, 230, 230);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1.2px solid #7a7a7a;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgb(95, 95, 95);
+    color: white;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section-innovation,
+.footer-section-excellence,
+.footer-section-competition {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section-innovation h2,
+.footer-section-excellence h2,
+.footer-section-competition h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section-innovation p,
+.footer-section-excellence p,
+.footer-section-competition p,
+.footer-section-excellence a {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social-icons a {
+    margin-right: 10px;
+}
+
+.footer-social-icons img {
+    height: 24px;
+    /* Adjust the size as needed */
+    width: auto;
+    /* Adjust the size as needed */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    section h2,
+    section h3 {
+        font-size: 1.8em;
+    }
+}
+
+
+.loading-gif {
+    max-width: 500px;
+}
+
+.pre-loader {
+    position: fixed;
+    z-index: 1000; /** make sure this is the highest value compared to all other divs **/
+    top: 0;
+    left: 0;
+    background: #191f26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pre-loader.hidden {
+    animation: fadeOut 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* Basic form styling to match footer */
+.contact-inputs {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    background: rgb(230, 230, 230);
+}
+
+/* Styling for submit button */
+.contact-left button {
+    padding: 10px 20px;
+    background-color: #030011;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left button:hover {
+    background-color: #080313;
+}
+
+/* Adjusting submit button image size */
+.contact-left button img {
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}

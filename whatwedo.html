@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Webpage</title>
+    <link rel="stylesheet" href="css/whatwedo.css">
+    <link rel="stylesheet" href="css/header-footer-common.css">
+    <script src="whatwedo.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <div class='pre-loader'>
+        <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif" />
+    </div>
+
+    <!-- Navbar with Inline Style -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="src/club-logo.png"></a>
+                <a href="index.html"> ikshiGen AI</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
+                <li><a href="/blogging-site-master/public/home.html" class="nav-link">Blogs</a></li>
+                <li><a href="whatwedo.html" class="nav-link active">What We Do</a></li>
+                <li><a href="#join-now" class="nav-link">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br>
+
+
+
+    <!-- Main Content -->
+
+    <div class="container">
+        <h1 class="title">Boom of Artificial Intelligence</h1>
+        <div class="boxes">
+            <div class="box" onclick="openModal('modalAgriculture')">
+                <h2>Agriculture</h2>
+                <p>AI has been increasingly applied in agriculture to enhance productivity, efficiency, and
+                    sustainability.</p>
+            </div>
+            <div class="box" onclick="openModal('modalSpace')">
+                <h2>Space Exploration</h2>
+                <p>AI in space exploration helps rovers navigate, analyze data, and make autonomous decisions.</p>
+            </div>
+            <div class="box" onclick="openModal('modalFashion')">
+                <h2>Fashion Design</h2>
+                <p>AI in fashion design creates unique styles by analyzing trends and generating new clothing patterns.
+                </p>
+            </div>
+            <div class="box" onclick="openModal('modalEducation')">
+                <h2>Personalized Education</h2>
+                <p>AI in personalized education adapts learning content to each student's pace, strengths, and needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modalAgriculture" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalAgriculture')">&times;</span>
+            <h2>Agriculture</h2>
+            <p>More detailed information about AI applications in agriculture...</p>
+        </div>
+    </div>
+
+    <div id="modalSpace" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalSpace')">&times;</span>
+            <h2>Space Exploration</h2>
+            <p>More detailed information about AI applications in space exploration...</p>
+        </div>
+    </div>
+
+    <div id="modalFashion" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalFashion')">&times;</span>
+            <h2>Fashion Design</h2>
+            <p>More detailed information about AI applications in fashion design...</p>
+        </div>
+    </div>
+
+    <div id="modalEducation" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalEducation')">&times;</span>
+            <h2>Personalized Education</h2>
+            <p>More detailed information about AI applications in personalized education...</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Activity Page Section -->
+    <section id="activity-page">
+        <h1>Activity Page</h1>
+        <div class="web-chart">
+            <div class="task central-task">Activities</div>
+            <div class="task task1" onclick="scrollToContent('task1')">Activity 1</div>
+            <div class="task task2" onclick="scrollToContent('task2')">Activity 2</div>
+            <div class="task task3" onclick="scrollToContent('task3')">Activity 3</div>
+            <div class="task task4" onclick="scrollToContent('task4')">Activity 4</div>
+        </div>
+
+        <!-- Task Details (Hidden initially) -->
+        <div class="task-content" id="task1">
+            <h2>Activity 1 Details</h2>
+            <p>More information about Task 1...</p>
+        </div>
+        <div class="task-content" id="task2">
+            <h2>Activity 2 Details</h2>
+            <p>More information about Task 2...</p>
+        </div>
+        <div class="task-content" id="task3">
+            <h2>Activity 3 Details</h2>
+            <p>More information about Task 3...</p>
+        </div>
+        <div class="task-content" id="task4">
+            <h2>Activity 4 Details</h2>
+            <p>More information about Task 4...</p>
+        </div>
+    </section>
+
+  
+
+    <!-- All Projects Section -->
+    <!-- All Projects Section -->
+
+    <hr> <!-- Separator Line -->
+
+    <!-- Why Join Us Section -->
+    <section id="why-join-us">
+        <h1>Why Join Us</h1>
+        <div class="why-join-container">
+            <div class="why-join-image">
+                <button class="join-us-button">Join Us</button>
+            </div>
+            <div class="why-join-benefits">
+                <ul>
+                    <li>Solve real world industry problems using AI</li>
+                    <li>Mentoring by industry members. </li>
+                    <li>Exploration of various AI tools to make life easier.</li>
+                    <!-- Add more benefits as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="join-now">
+        <div class="footer-section-innovation">
+          <h2>FOLLOW US</h2>
+          <p>Follow us on.</p>
+          <div class="footer-social-icons">
+            <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png" alt="Linked In" /></a>
+            <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
+          </div>
+        </div>
+        <div class="footer-section-excellence">
+          <h2>CONTACT US</h2>
+          <p>+22-555-9800</p>
+          <p>
+            <a href="mailto:contact.ikshigen@gmail.com"
+              >contact.ikshigen@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="footer-section-competition">
+          <h2>JOIN NOW</h2>
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+              <input type="hidden" name="access_key" value="a7e47bc6-35d5-4e53-9e92-e02acd82883c">
+              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+              <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+              <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
+              <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
+              <button type="submit">Submit<img src="src/submit.png" alt=""></button>
+        </div>
+      </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
