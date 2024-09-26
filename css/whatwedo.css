@@ -1,5 +1,4 @@
 /* General Styles */
-
 .container {
     text-align: center;
     margin-top: 50px;
@@ -302,7 +301,7 @@ hr {
 }
 
 .project-box:hover {
-    transform: translateY(-5px); /* Hover effect: lift */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
@@ -332,11 +331,8 @@ hr {
 #why-join-us {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #09aeae, #4b87d0cb);
-    
     margin-top: 30px;
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 #why-join-us h1 {
