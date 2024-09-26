@@ -175,7 +175,7 @@ footer {
 
 .pre-loader {
     position: fixed;
-    z-index: 1000; /** make sure this is the highest value compared to all other divs **/
+    z-index: 2000; /** make sure this is the highest value compared to all other divs **/
     top: 0;
     left: 0;
     background: #191f26;
