@@ -7,17 +7,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap:10px;
+    gap: 10px;
 }
-.logo a{
+
+.logo a {
     font-family: 'Kodchasan';
 }
-.logo img{
-    width:auto;
+
+.logo img {
+    width: auto;
     height: 50px;
     align-self: center;
 }
@@ -85,8 +88,9 @@ nav {
     gap: 1rem;
     margin-right: 10px;
 }
-.nav-links a{
-    font-weight:500;
+
+.nav-links a {
+    font-weight: 500;
 }
 
 .nav-link {
@@ -103,6 +107,7 @@ nav {
     background: rgb(95, 95, 95);
     color: white;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -175,7 +180,8 @@ footer {
 
 .pre-loader {
     position: fixed;
-    z-index: 2000; /** make sure this is the highest value compared to all other divs **/
+    z-index: 2000;
+    /** make sure this is the highest value compared to all other divs **/
     top: 0;
     left: 0;
     background: #191f26;
@@ -197,9 +203,10 @@ footer {
         visibility: hidden;
     }
 }
+
 /* Basic form styling to match footer */
 .contact-inputs {
-    width: 80%;
+    width: 85%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -226,9 +233,111 @@ footer {
     background-color: #080313;
 }
 
-/* Adjusting submit button image size */
 .contact-left button img {
     margin-left: 10px;
     width: 16px;
     height: 16px;
+}
+
+@media only screen and (max-width: 810px) {
+    .nav-link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        gap: 20px;
+
+    }
+
+    .footer-section-innovation,
+    .footer-section-excellence {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .our-objective {
+        flex-direction: column-reverse;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 50px; /* Adjust based on the height of your header */
+        right: 20px; /* Adjust based on your layout */
+        background-color: rgba(230, 230, 230, 0.9);
+        border: 1px solid #7a7a7a;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        width: 200px;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: rgb(95, 95, 95);
+        color: white;
+    }
+}
+/* Hide the menu icon by default */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+}
+.dropdown-menu{
+    display: none;
+}
+
+/* Show the menu icon and hide nav links when the screen width is less than 810px */
+@media only screen and (max-width: 810px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 50px; /* Adjust based on the height of your header */
+        right: 20px; /* Adjust based on your layout */
+        background-color: rgba(230, 230, 230, 0.9);
+        border: 1px solid #7a7a7a;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        width: 200px; /* Adjust based on your design */
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: rgb(95, 95, 95);
+        color: white;
+    }
+}
+
+/* Show the dropdown menu when the menu icon is active */
+.menu-icon.active + .dropdown-menu {
+    display: block;
 }
