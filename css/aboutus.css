@@ -312,6 +312,7 @@
 @media screen and (max-width: 810px) {
     .welcome-banner {
         padding: 20px;
+        height: 60vh;
     }
 
     .welcome-banner h1 {

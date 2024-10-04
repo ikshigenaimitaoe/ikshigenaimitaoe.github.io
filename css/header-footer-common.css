@@ -263,13 +263,11 @@ footer {
     .dropdown-menu {
         display: none;
         position: absolute;
-        top: 50px; /* Adjust based on the height of your header */
-        right: 20px; /* Adjust based on your layout */
         background-color: rgba(230, 230, 230, 0.9);
         border: 1px solid #7a7a7a;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1001;
+        z-index: 2000;
         width: 200px;
     }
 
@@ -278,12 +276,10 @@ footer {
         padding: 10px;
         color: black;
         text-decoration: none;
-        border-bottom: 1px solid #ccc;
     }
 
     .dropdown-menu a:hover {
-        background-color: rgb(95, 95, 95);
-        color: white;
+        color: rgb(84, 152, 255);
     }
 }
 /* Hide the menu icon by default */
@@ -319,7 +315,7 @@ footer {
         border: 1px solid #7a7a7a;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1001;
+        z-index: 2000;
         width: 200px; /* Adjust based on your design */
     }
 
@@ -328,12 +324,13 @@ footer {
         padding: 10px;
         color: black;
         text-decoration: none;
-        border-bottom: 1px solid #ccc;
+        border-radius: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.155);
     }
 
     .dropdown-menu a:hover {
-        background-color: rgb(95, 95, 95);
-        color: white;
+        color: rgb(84, 152, 255);
+        background-color: rgba(84, 152, 255, 0.23);
     }
 }
 

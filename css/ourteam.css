@@ -84,7 +84,9 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 50px 20px 50px 20px;
+    margin: 50px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding-bottom: 50px;
 }
 
 .faculty-guide-team h2 {
@@ -156,7 +158,7 @@ body {
 }
 
 .guide-intro {
-    max-width: 65%;
+    max-width: 80%;
     text-align: center;
     line-height: 1.6;
 }
@@ -166,73 +168,217 @@ body {
 }
 
 /* Three columns side by side */
-.row {
-    margin: 70px 50px 50px 50px;
-    display: flex;
-    align-items: center;
-    border-top:1px solid rgb(195, 195, 195);
-    padding-top: 50px;
-}
 
-.column {
-    float: left;
-    width: 33.3%;
-    padding: 0 8px;
-    padding: 20px;
-    height: auto;
-}
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 810px) {
+    .team-overview {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .team-overview-content-wrapper {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .team-overview-image img {
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+    }
+
     .column {
         width: 100%;
         display: block;
+        margin-bottom: 20px;
+    }
+
+    .our-team-wellcome {
+        margin: 100px 20px 20px 20px;
     }
 }
 
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: auto;
-    border-radius: 30px;
+@media screen and (max-width: 600px) {
+    .our-team-wellcome h2 {
+        font-size: 36px;
+    }
+
+    .our-team-wellcome p {
+        font-size: 18px;
+    }
+
+    .team-overview-content {
+        font-size: 1.2em;
+    }
+
+    .faculty-guide-team h2 {
+        font-size: 32px;
+    }
+
+    .guide-name p {
+        font-size: 18px;
+    }
+
+    .guide-intro p {
+        font-size: 16px;
+    }
+
+    .card img {
+        height: auto;
+        width: 100%;
+    }
+
+    .button {
+        padding: 10px;
+    }
 }
 
-.card img {
-    border-radius: 30px;
-    height: 350px;
+@media screen and (max-width: 600px) {
+
+    .our-team-wellcome h2,
+    .our-team-wellcome p,
+    .team-overview-content,
+    .faculty-guide-team h2,
+    .guide-name p,
+    .guide-intro p {
+        text-align: justify;
+    }
+
+    .our-team-wellcome,
+    .team-overview-content-wrapper,
+    .faculty-guide-content,
+    .guide-intro {
+        text-align: center;
+    }
 }
 
-/* Some left and right padding inside the container */
-.container {
-    padding: 20px;
+/* meet our team */
+
+.text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
 }
 
-/* Clear floats */
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.responsive-cell-block {
+    min-height: 75px;
 }
 
-.title {
-    color: grey;
-    margin-bottom: 10px;
-}
-
-.button {
-    align-items: center;
-    border: none;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+.responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
     width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.button:hover {
-    background-color: #555;
+.outer-container {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.inner-container {
+    max-width: 1320px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.section-head-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 0 0 10px 0;
+}
+
+.section-subhead-text {
+    font-size: 25px;
+    color: rgb(153, 153, 153);
+    line-height: 35px;
+    max-width: 470px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-links {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.position {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    color: rgb(102, 102, 102);
+}
+
+.team-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid powderblue;
+}
+
+.team-card-container {
+    width: 280px;
+    margin: 0 0 40px 0;
+}
+
+@media (max-width: 500px) {
+    .outer-container {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .section-head-text {
+        text-align: center;
+    }
 }
