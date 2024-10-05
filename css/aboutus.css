@@ -460,7 +460,7 @@
         justify-content: center;
     }
 
-    .card-col a:nth-child(n+3){
+    .card-col a:nth-child(n+4){
         display:none;
     }
 }
