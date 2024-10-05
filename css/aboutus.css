@@ -433,7 +433,10 @@
         display:none;
     }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
+    .welcome-banner{
+        height: 70vh;
+    }
     .portfolio-body {
         margin: 50px 20px;
     }
