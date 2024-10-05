@@ -434,9 +434,6 @@
     }
 }
 @media screen and (max-width: 1200px) {
-    .welcome-banner{
-        height: 70vh;
-    }
     .portfolio-body {
         margin: 50px 20px;
     }
@@ -444,7 +441,6 @@
         font-size: 1.2rem;
         text-align: justify;
     }
-
     .portfolio-body h3 {
         font-size: 1.8em;
     }
