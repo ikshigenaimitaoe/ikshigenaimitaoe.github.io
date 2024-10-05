@@ -8,6 +8,22 @@
     box-sizing: border-box;
 }
 
+/* Remove blue background on focus and active states */
+a,
+button {
+    -webkit-tap-highlight-color: transparent; /* Disable blue highlight color on mobile */
+    outline: none; /* Remove default outline */
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+    background: transparent; /* Ensure no background change on click */
+    outline: none; /* No focus outline */
+}
+
+
 .logo {
     display: flex;
     align-items: center;

@@ -340,6 +340,7 @@ body {
     width: 125px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .name {
@@ -356,7 +357,7 @@ body {
     font-weight: 700;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-left: 0px;
     color: rgb(102, 102, 102);
 }
