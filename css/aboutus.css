@@ -433,7 +433,7 @@
         display:none;
     }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1024px) {
     .portfolio-body {
         margin: 50px 20px;
     }
