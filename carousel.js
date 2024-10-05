@@ -30,8 +30,6 @@ function updateSlider() {
     cardCol.style.transform = `translateX(-${offset}px)`;
 
     // Hide buttons when at the start or end
-    prevButton.style.display = currentIndex === 0 ? 'none' : 'block';
-    nextButton.style.display = currentIndex >= maxIndex ? 'none' : 'block';
 }
 
 // Event listeners for button clicks
