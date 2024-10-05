@@ -262,6 +262,7 @@
     flex-direction: row;
     gap: 25px;
     transition: transform 0.5s ease; /* Animation for slider effect */
+    scroll-snap-align: start; /* Ensure cards snap to start */
 }
 
 .card {
@@ -270,6 +271,7 @@
     border-radius: 20px;
     overflow: hidden; /* Ensure content stays within card */
     transition: transform 0.3s ease; /* Optional: add a slight scale effect on hover */
+    flex-shrink: 0; /* Prevent cards from shrinking */
 }
 
 .card a img {
@@ -327,6 +329,58 @@
 
 .portfolio-body .highlight2 {
     color: #007CBE;
+}
+
+@media screen and (max-width: 850px) {
+    .portfolio-body h3 {
+        font-size: 1.5em;
+    }
+
+    .portfolio-body h2 {
+        font-size: 2em;
+    }
+
+    .card-col {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px; /* Reduce gap between cards */
+    }
+
+    .card {
+        width: 250px; /* Reduce card width */
+    }
+
+    .scroll-button {
+        justify-content: center;
+    }
+    .project-card-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-body h3 {
+        font-size: 1.2em;
+    }
+
+    .portfolio-body h2 {
+        font-size: 1.5em;
+    }
+
+    .card-col {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Further reduce gap between cards */
+    }
+
+    .card {
+        width: 200px; /* Further reduce card width */
+    }
+
+    .scroll-button {
+        justify-content: center;
+    }
 }
 
 
