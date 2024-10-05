@@ -309,7 +309,7 @@
     color: #007CBE; 
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 850px) {
     .welcome-banner {
         padding: 20px;
         height: 60vh;
@@ -377,6 +377,9 @@
 
     .scroll-button {
         justify-content: center;
+    }
+    .card-col a:nth-child(n+2){
+        display:none;
     }
 }
 
