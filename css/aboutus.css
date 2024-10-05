@@ -433,3 +433,34 @@
         display:none;
     }
 }
+@media screen and (max-width: 950px) {
+    .portfolio-body {
+        margin: 50px 20px;
+    }
+
+    .portfolio-body h3 {
+        font-size: 1.8em;
+    }
+
+    .portfolio-body h2 {
+        font-size: 2.2em;
+    }
+
+    .card-col {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-col a img {
+        height: auto;
+        width: 100%;
+    }
+
+    .scroll-button {
+        justify-content: center;
+    }
+
+    .card-col a:nth-child(n+3){
+        display:none;
+    }
+}
