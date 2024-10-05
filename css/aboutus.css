@@ -239,6 +239,7 @@
     flex-direction: column;
     margin: 70px 30px 70px 30px;
 }
+
 .portfolio-body h3 {
     color: #365374;
     font-size: 2em;
@@ -246,36 +247,53 @@
 }
 
 .portfolio-body h2 {
-    color:#555;
+    color: #555;
     font-size: 2.5em;
 }
 
 .project-card-container {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
-
 }
 
 .card-col {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 25px;
-    overflow-x:visible;
+    transition: transform 0.5s ease; /* Animation for slider effect */
 }
 
-.card-col a img {
+.card {
+    position: relative;
+    width: 300px; /* Set width for each card */
+    border-radius: 20px;
+    overflow: hidden; /* Ensure content stays within card */
+    transition: transform 0.3s ease; /* Optional: add a slight scale effect on hover */
+}
+
+.card a img {
     height: 200px;
-    width: auto;
-    border-radius: 40px;
-    transition: transform 0.3s ease;
+    width: 100%; /* Make sure image fills the card */
+    border-radius: 20px;
 }
 
-.card-col a img:hover {
-    transform: scale(1.05);
+.title-description {
+    position: absolute;
+    bottom: 0; /* Start at the bottom of the card */
+    left: 0;
+    right: 0;
+    background: transparent; /* Start as transparent */
+    color: white;
+    padding: 10px;
+    text-align: center; /* Center the text */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for the slide */
+    transform: translateY(100%); /* Initially position it below the card */
+}
+
+.card:hover .title-description {
+    transform: translateY(0); /* Slide up to position */
+    background-color: rgba(0, 0, 0, 0.7); /* Solid color on hover */
 }
 
 .scroll-button {
@@ -302,12 +320,15 @@
     color: #D4FD5C;
     background-color: #007CBE;
 }
+
 .portfolio-body .highlight1 {
-    color: #75439e; 
+    color: #75439e;
 }
+
 .portfolio-body .highlight2 {
-    color: #007CBE; 
+    color: #007CBE;
 }
+
 
 @media screen and (max-width: 850px) {
     .welcome-banner {

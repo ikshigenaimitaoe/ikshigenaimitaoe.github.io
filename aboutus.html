@@ -2,150 +2,229 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/header-footer-common.css">
-    <link rel="stylesheet" href="css/aboutus.css">
-    <link rel="icon" href="src/club-logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/header-footer-common.css">
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="icon" href="src/club-logo.png" type="image/png">
 </head>
 
 <body>
 
-    <div class='pre-loader'>
-        <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif"/>
-    </div>
+  <div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif" />
+  </div>
 
-    <header>
-        <nav>
-          <div class="logo">
-            <a href="index.html"><img src="src/club-logo.png" alt="logo" /></a>
-            <a href="index.html">ikshiGen AI</a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="aboutus.html" class="nav-link">About Us</a></li>
-            <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
-            <li><a href="#" class="nav-link">Blogs</a></li>
-            <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
-            <li><a href="#join-now" class="nav-link">Join Us</a></li>
-          </ul>
-          <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -10 34 34">
-            <g fill="none">
-              <path fill="currentColor" d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/>
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/>
-            </g>
-          </svg></a>
-        </nav>
-        <div class="dropdown-menu" id="dropdown-menu">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="ourteam.html">Our Team</a>
-          <a href="#">Blogs</a>
-          <a href="whatwedo.html">What We Do</a>
-          <a href="#join-now">Join Us</a>
-        </div>
-      </header>
-    <!-- welcome message -->
-     <!-- EASTER EGG:- Pop 20 bubble in home page to open a mini game -->
-    <div class="welcome-banner" >
-        <h1>Welcome to IkshiGen-AI Club</h1>
-        <p>We are here to make a difference</p>
-        <div id="particles-js"></div>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="src/club-logo.png" alt="logo" /></a>
+        <a href="index.html">ikshiGen AI</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html" class="nav-link active">About Us</a></li>
+        <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
+        <li><a href="#" class="nav-link">Blogs</a></li>
+        <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+        <li><a href="#join-now" class="nav-link">Join Us</a></li>
+      </ul>
+      <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 -10 34 34">
+          <g fill="none">
+            <path fill="currentColor"
+              d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+              d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5" />
+          </g>
+        </svg></a>
+    </nav>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="ourteam.html">Our Team</a>
+      <a href="#">Blogs</a>
+      <a href="whatwedo.html">What We Do</a>
+      <a href="#join-now">Join Us</a>
     </div>
-    <!-- ________________________ -->
+  </header>
+  <!-- welcome message -->
+  <!-- EASTER EGG:- Pop 20 bubble in home page to open a mini game -->
+  <div class="welcome-banner">
+    <h1>Welcome to IkshiGen-AI Club</h1>
+    <p>We are here to make a difference</p>
+    <div id="particles-js"></div>
+  </div>
+  <!-- ________________________ -->
 
-    <div class="about-us">
-        <div class="about-us-image">
-            <img src="src/about-left-image.png" alt="About Us">
+  <div class="about-us">
+    <div class="about-us-image">
+      <img src="src/about-left-image.png" alt="About Us">
+    </div>
+    <div class="about-us-content">
+      <h2>About Us</h2>
+      <p>AI Club Of <span class="mitaoe">MITAOE</span> Aspiring Developers & Visit Our Social Media For <span
+          class="reg-update">Regular Update</span>.</p>
+      <div class="about-us-followers">
+        <div class="about-us-followers-item">
+          <p>100+</p>
+          <h3>Social Followers</h3>
         </div>
-        <div class="about-us-content">
-            <h2>About Us</h2>
-            <p>AI Club Of <span class="mitaoe">MITAOE</span> Aspiring Developers & Visit Our Social Media For <span
-                    class="reg-update">Regular Update</span>.</p>
-            <div class="about-us-followers">
-                <div class="about-us-followers-item">
-                    <p>100+</p>
-                    <h3>Social Followers</h3>
-                </div>
-                <div class="about-us-followers-item">
-                    <p>50+</p>
-                    <h3>Reels and Videos</h3>
-                </div>
-                <div class="about-us-followers-item">
-                    <p>5+</p>
-                    <h3>Projects</h3>
-                </div>
+        <div class="about-us-followers-item">
+          <p>50+</p>
+          <h3>Reels and Videos</h3>
+        </div>
+        <div class="about-us-followers-item">
+          <p>5+</p>
+          <h3>Projects</h3>
+        </div>
+      </div>
+      <p>Welcome to ikshiGenAI, a dynamic and forward-thinking club dedicated to exploring the limitless
+        possibilities of artificial intelligence and machine learning. At ikshiGenAI, we are a community of
+        passionate students, professionals, and enthusiasts who are committed to learning, innovating, and
+        sharing knowledge in the field of AI. Our mission is to foster a collaborative environment where
+        creativity meets technology, enabling members to develop cutting-edge AI solutions and contribute to the
+        advancement of this transformative field. Whether you are a seasoned expert or a curious beginner,
+        ikshiGenAI is the perfect place to grow, connect, and lead the future of AI.</p>
+    </div>
+  </div>
+  <!-- portfolio -->
+
+  <div class="portfolio-body">
+    <h3>Our Portfolio</h3>
+    <h2>Discover Our Recent <span class="highlight1">Projects</span><br> And <span class="highlight2">Showcases</span>
+    </h2>
+    <div class="scroll-button">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+    <div class="project-card-container">
+      <div class="card-col">
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-01.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
             </div>
-            <p>Welcome to ikshiGenAI, a dynamic and forward-thinking club dedicated to exploring the limitless
-                possibilities of artificial intelligence and machine learning. At ikshiGenAI, we are a community of
-                passionate students, professionals, and enthusiasts who are committed to learning, innovating, and
-                sharing knowledge in the field of AI. Our mission is to foster a collaborative environment where
-                creativity meets technology, enabling members to develop cutting-edge AI solutions and contribute to the
-                advancement of this transformative field. Whether you are a seasoned expert or a curious beginner,
-                ikshiGenAI is the perfect place to grow, connect, and lead the future of AI.</p>
+          </a>
         </div>
-    </div>
-    <!-- portfolio -->
-
-    <div class="portfolio-body">
-        <h3>Our Portfolio</h3>
-        <h2>Discover Our Recent <span class="highlight1">Projects</span><br> And <span class="highlight2">Showcases</span></h2>        <div class="scroll-button">
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
-        </div>
-        <div class="project-card-container">
-            <div class="card-col">
-                <a href=""><img src="src/portfolio-01.jpg"></a>
-                <a href=""><img src="src/portfolio-02.jpg"></a>
-                <a href=""><img src="src/portfolio-03.jpg"></a>
-                <a href=""><img src="src/portfolio-04.jpg"></a>
-                <a href=""><img src="src/portfolio-05.jpg"></a>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-02.jpg" alt="Project 2">
+            <div class="title-description">
+              <h4>Project Name 2</h4>
+              <p>Short description for project 2.</p>
             </div>
-            <div class="card-col">
-                <a href=""><img src="src/portfolio-06.jpg"></a>
-                <a href=""><img src="src/portfolio-01.jpg"></a>
-                <a href=""><img src="src/portfolio-02.jpg"></a>
-                <a href=""><img src="src/portfolio-03.jpg"></a>
-                <a href=""><img src="src/portfolio-04.jpg"></a>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-03.jpg" alt="Project 3">
+            <div class="title-description">
+              <h4>Project Name 3</h4>
+              <p>Short description for project 3.</p>
             </div>
+          </a>
         </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-04.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-05.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-06.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-01.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-02.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="src/portfolio-03.jpg" alt="Project 1">
+            <div class="title-description">
+              <h4>Project Name 1</h4>
+              <p>Short description for project 1.</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-    
+  </div>
 
-    <!-- footer section -->
-    <footer id="join-now">
-        <div class="footer-section-innovation">
-          <h2>FOLLOW US</h2>
-          <p>Follow us on.</p>
-          <div class="footer-social-icons">
-            <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png" alt="Linked In" /></a>
-            <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
-          </div>
-        </div>
-        <div class="footer-section-excellence">
-          <h2>CONTACT US</h2>
-          <p>+91 8484875370</p>
-          <p>
-            <a href="mailto:contact.ikshigen@gmail.com">
-                ikshigenaimitaoe@gmail.com
-            </a>
-          </p>
-        </div>
-        <div class="footer-section-competition">
-          <h2>JOIN NOW</h2>
-              <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-              <input type="hidden" name="access_key" value="5be24f75-7067-4a2c-bb1b-c2a04c63d195">
-              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-              <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
-              <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
-              <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
-              <button type="submit">Submit<img src="src/submit.png" alt=""></button>
-        </div>
-      </footer>
-    <script src="app.js"></script>
-    <script src="aboutus.js"></script>
-    <script src="menu.js"></script>
+
+
+
+  <!-- footer section -->
+  <footer id="join-now">
+    <div class="footer-section-innovation">
+      <h2>FOLLOW US</h2>
+      <p>Follow us on.</p>
+      <div class="footer-social-icons">
+        <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png"
+            alt="Linked In" /></a>
+        <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png"
+            alt="Instagram" /></a>
+        <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
+    <div class="footer-section-excellence">
+      <h2>CONTACT US</h2>
+      <p>+91 8484875370</p>
+      <p>
+        <a href="mailto:contact.ikshigen@gmail.com">
+          ikshigenaimitaoe@gmail.com
+        </a>
+      </p>
+    </div>
+    <div class="footer-section-competition">
+      <h2>JOIN NOW</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="5be24f75-7067-4a2c-bb1b-c2a04c63d195">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
+        <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
+        <button type="submit">Submit<img src="src/submit.png" alt=""></button>
+    </div>
+  </footer>
+  <script src="carousel.js"></script>
+  <script src="app.js"></script>
+  <script src="aboutus.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
