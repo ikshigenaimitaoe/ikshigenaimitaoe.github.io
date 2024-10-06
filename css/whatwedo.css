@@ -97,11 +97,11 @@ hr {
     margin: 60px auto; /* Center the web chart horizontally */
     height: 500px; /* Increased height for a bigger web chart */
     width: 800px; /* Increased width for a bigger web chart */
-    background-color: #EAE4DD; /* Background color for visibility */
+    background: linear-gradient(135deg, #EAE4DD, #D3CBB8); /* Gradient background for a modern look */
     border: 2px solid #295F98;
     border-radius: 20px;
     overflow: hidden; /* Prevent overflow of tasks */
-    position: relative; /* Relative position for absolute positioned tasks */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .task {
@@ -128,7 +128,6 @@ hr {
 .central-task {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* Position each task at a corner */
@@ -155,7 +154,7 @@ hr {
 /* Task Content Styling */
 .task-content {
     display: none; /* Initially hidden */
-    margin-top: 20px;
+    margin: 20px;
     padding: 20px;
     border: 2px solid #3498db;
     border-radius: 10px;
@@ -416,7 +415,7 @@ hr {
 }
 
 /* Media Queries for Responsive Design */
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 850px) {
     .boxes {
         flex-direction: column;
         align-items: center;
@@ -469,6 +468,9 @@ hr {
 
     .why-join-container {
         flex-direction: column;
+    }
+    .task-content{
+        margin: 20px;
     }
 }
 

@@ -367,19 +367,34 @@
     .card-col {
         flex-direction: row;
         align-items: center;
-        gap: 15px; /* Reduce gap between cards */
-    }
-
-    .card {
-        width: 250px; /* Reduce card width */
+        gap: 15px;
+        margin-top: 10px;
     }
 
     .scroll-button {
         justify-content: center;
     }
     .project-card-container {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        overflow-x:hidden;
+    }
+    .card {
+        border: none;
+        box-shadow: none;
+    }
+    .card a img {
+        border-radius: 20px;
+    }
+    .title-description{
+        display:none;
+    }
+    .card:hover {
+        box-shadow: none;
+    }
+    .about-us-content{
+        padding: 20px;
+    }
+    .card {
+        width: 200px; /* Further reduce card width */
     }
 }
 
@@ -396,10 +411,6 @@
         flex-direction: row;
         align-items: center;
         gap: 10px; /* Further reduce gap between cards */
-    }
-
-    .card {
-        width: 200px; /* Further reduce card width */
     }
 
     .scroll-button {
