@@ -236,7 +236,7 @@ footer {
 /* Styling for submit button */
 .contact-left button {
     padding: 10px 20px;
-    background-color: #030011;
+    background-color: #0a0039;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -246,7 +246,7 @@ footer {
 }
 
 .contact-left button:hover {
-    background-color: #080313;
+    background-color: #000000;
 }
 
 .contact-left button img {

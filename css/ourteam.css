@@ -343,10 +343,19 @@ body {
     margin-bottom: 40px;
 }
 
+.social-media-links a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media-links a:hover,
+.social-media-links a:active {
+    transform: scale(1.2);
+}
+
 .name {
     font-size: 22px;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
@@ -367,6 +376,14 @@ body {
     height: 200px;
     border-radius: 50%;
     border: 4px solid powderblue;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+        10px 10px 20px rgba(0, 0, 0, 0.2),
+        15px 15px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.team-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .team-card-container {

@@ -270,14 +270,38 @@
     width: 300px; /* Set width for each card */
     border-radius: 20px;
     overflow: hidden; /* Ensure content stays within card */
-    transition: transform 0.3s ease; /* Optional: add a slight scale effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for box-shadow */
     flex-shrink: 0; /* Prevent cards from shrinking */
+    border: 2px solid purple;
+    animation: border-shine 5s linear infinite;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Increase shadow opacity for better visibility */
 }
 
+.card:hover {
+    transform: translateY(-8px) perspective(1000px) rotateX(5deg); /* Lift and tilt the card slightly on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8); /* Enhance shadow on hover */
+}
+
+@keyframes border-shine {
+    0% {
+        border-color: purple;
+    }
+    25% {
+        border-color: #d1b3ff; 
+    }
+    50% {
+        border-color: #b266ff; 
+    }
+    75% {
+        border-color: #7a00b3;
+    }
+    100% {
+        border-color: purple;
+    }
+}
 .card a img {
-    height: 200px;
+    height:100%;
     width: 100%; /* Make sure image fills the card */
-    border-radius: 20px;
 }
 
 .title-description {
