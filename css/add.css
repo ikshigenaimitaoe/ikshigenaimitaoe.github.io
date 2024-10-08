@@ -44,6 +44,43 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+.editor-header {
+    display: flex;
+    flex-direction: row;
+}
+.media-preview {
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.media-preview img,
+.media-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.remove-preview-btn {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
 
 .editor-header input {
     width: calc(100% - 20px);
@@ -51,7 +88,7 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .editor-body textarea {
@@ -60,13 +97,14 @@ body {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 20px;
     resize: none;
 }
 
 .editor-footer {
-    text-align: right;
+    display: flex;
     margin-top: 10px;
+    flex-direction: row;
 }
 
 .publish-btn {
@@ -86,4 +124,32 @@ body {
     background-color: #ff4500;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.insert-media {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.custom-file-upload {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.custom-file-upload:hover {
+    background-color: #ff4500;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#file-upload {
+    display: none;
 }
