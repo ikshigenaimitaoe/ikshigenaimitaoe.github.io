@@ -64,6 +64,7 @@ body {
 
 /* Recent Posts Section */
 .recent-posts {
+  margin-top: 40px;
   padding: 3rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
