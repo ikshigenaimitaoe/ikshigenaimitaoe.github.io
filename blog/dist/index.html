@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - blog</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IkshiGen AI</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/css/header-footer-common.css">
 </head>
 <body>
-
-  <!-- Header Section -->
+  
+</body>
+</html>
   <header>
-    <div class="container">
-      <h1>AwaInspires</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="src/club-logo.png" alt="logo" /></a>
+        <a href="index.html">ikshiGen AI</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html" class="nav-link active">About Us</a></li>
+        <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
+        <li><a href="blog/dist/index.html" class="nav-link">Blogs</a></li>
+        <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
+        <li><a href="#join-now" class="nav-link">Join Us</a></li>
+      </ul>
+      <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 -10 34 34">
+          <g fill="none">
+            <path fill="currentColor"
+              d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+              d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5" />
+          </g>
+        </svg></a>
+    </nav>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="ourteam.html">Our Team</a>
+      <a href="blog/dist/index.html">Blogs</a>
+      <a href="whatwedo.html">What We Do</a>
+      <a href="#join-now">Join Us</a>
     </div>
   </header>
 
@@ -86,29 +96,36 @@
   </section>
 
   <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <div class="about">
-        <h3>AwaInspires</h3>
-        <p>A fictional blog for a tutorial on YouTube by Awa Melvine.</p>
+  <footer id="join-now">
+    <div class="footer-section-innovation">
+      <h2>FOLLOW US</h2>
+      <p>Follow us on.</p>
+      <div class="footer-social-icons">
+        <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png"
+            alt="Linked In" /></a>
+        <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png"
+            alt="Instagram" /></a>
+        <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
       </div>
-      <div class="quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Mentors</a></li>
-          <li><a href="#">Write for Us</a></li>
-        </ul>
-      </div>
-      <div class="contact-form">
-        <h3>Contact Us</h3>
-        <form action="#" method="post">
-          <input type="email" placeholder="Your email address">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+    </div>
+    <div class="footer-section-excellence">
+      <h2>CONTACT US</h2>
+      <p>+91 8484875370</p>
+      <p>
+        <a href="mailto:contact.ikshigen@gmail.com">
+          ikshigenaimitaoe@gmail.com
+        </a>
+      </p>
+    </div>
+    <div class="footer-section-competition">
+      <h2>JOIN NOW</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="5be24f75-7067-4a2c-bb1b-c2a04c63d195">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
+        <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
+        <button type="submit">Submit<img src="src/submit.png" alt=""></button>
     </div>
   </footer>
 
@@ -116,6 +133,7 @@
 </html>
 <!-- partial -->
   <script  src="./script.js"></script>
+  <script src="/app.js"></script>
 
 </body>
 </html>
