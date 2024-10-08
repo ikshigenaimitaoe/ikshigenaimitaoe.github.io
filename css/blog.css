@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: rgb(215, 255, 245);
+  background: linear-gradient(11deg, rgba(215, 255, 245, 1) 10%, rgba(215, 255, 245, 0.6131244734221813) 45%, rgba(215, 255, 245, 1) 75%);
+}
+
+/* Trending Posts Section */
+.trending-posts {
+  padding: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.trending-posts h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.trending-posts .posts-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+}
+
+.trending-posts .post {
+  min-width: 280px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trending-posts .post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trending-posts .post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.trending-posts .post h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.trending-posts .post p {
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+/* Recent Posts Section */
+.recent-posts {
+  padding: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.recent-posts h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 300;
+}
+
+.recent-posts article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.recent-posts article img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.recent-posts article img:hover {
+  transform: scale(1.05);
+}
+
+.recent-posts article h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.recent-posts article h3:hover {
+  color: #1abc9c;
+}
+
+.recent-posts article p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+}
+
+.recent-posts article .read-more {
+  font-weight: bold;
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.recent-posts article .read-more:hover {
+  color: #c0392b;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .recent-posts article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recent-posts article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .trending-posts .posts-slider {
+    flex-direction: column;
+  }
+}
