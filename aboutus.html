@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link rel="stylesheet" href="css/header-footer-common.css">
-  <link rel="stylesheet" href="css/aboutus.css">
-  <link rel="icon" href="src/club-logo.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ikshiGen-AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header-footer-common.css" />
+  <link rel="icon" href="src/club-logo.png" type="image/png" />
 </head>
 
 <body>
-
-  <div class='pre-loader'>
-    <img class='loading-gif' alt='loading' src="src/loading-screen.gif" />
+  <div class="pre-loader">
+    <img class="loading-gif" alt="loading" src="src/loading-screen.gif" />
   </div>
-
   <header>
     <nav>
       <div class="logo">
@@ -23,7 +21,7 @@
         <a href="index.html">ikshiGen AI</a>
       </div>
       <ul class="nav-links">
-        <li><a href="aboutus.html" class="nav-link active">About Us</a></li>
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
         <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
         <li><a href="blog.html" class="nav-link">Blogs</a></li>
         <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
@@ -40,7 +38,6 @@
         </svg></a>
     </nav>
     <div class="dropdown-menu" id="dropdown-menu">
-      <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
       <a href="ourteam.html">Our Team</a>
       <a href="blog.html">Blogs</a>
@@ -48,129 +45,113 @@
       <a href="#join-now">Join Us</a>
     </div>
   </header>
-  <!-- welcome message -->
-  <!-- EASTER EGG:- Pop 20 bubble in home page to open a mini game -->
-  <div class="welcome-banner">
-    <h1>Welcome to IkshiGen-AI Club</h1>
-    <p>We are here to make a difference</p>
-    <div id="particles-js"></div>
-  </div>
-  <!-- ________________________ -->
+  <!-- carousel -->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="src/Designer2.png" alt="Image 1" />
+      <div class="text">
+        <h2 class="slide-title">Club Inauguration</h2>
+        <p class="slide-description">Join us for the inauguration of our club.</p>
+      </div>
+    </div>
 
-  <div class="about-us">
+    <div class="mySlides">
+      <img src="src/blog.png" alt="Image 2" />
+      <div class="text">
+        <a href="blog.html">
+          <h2 class="slide-title">Recent Blogs</h2>
+        </a>
+          <p class="slide-description">Read the latest blogs posted by our team.</p>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="src/aiprojects.png" alt="Image 3" />
+      <div class="text">
+        <a href="aboutus.html">
+          <h2 class="slide-title">Our Projects</h2>
+        </a>
+          <p class="slide-description">Click here and discover our Team Member's projects.</p>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <br />
+
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- About Us Card START-->
+  <div class="about-us" id="about-us">
+    <div class="about-us-content-wrapper">
+      <h2 id="about-us-title">ABOUT US. It'll blow your mind.</h2>
+      <div class="about-us-content">
+        <p>
+          We organize multiple fun and educational events in MITAOE related to
+          AI, expert talks, workshops, projects, bootcamps and more. We strive
+          to lower the entry-barrier in the emerging field of AI/ML by
+          providing opportunities to interact with leaders in industry and
+          academia, and also a hands-on project-based learning experience.
+        </p>
+      </div>
+    </div>
     <div class="about-us-image">
-      <img src="src/about-left-image.png" alt="About Us">
-    </div>
-    <div class="about-us-content">
-      <h2>About Us</h2>
-      <p>AI Club Of <span class="mitaoe">MITAOE</span> Aspiring Developers & Visit Our Social Media For <span
-          class="reg-update">Regular Update</span>.</p>
-      <div class="about-us-followers">
-        <div class="about-us-followers-item">
-          <p>100+</p>
-          <h3>Social Followers</h3>
-        </div>
-        <div class="about-us-followers-item">
-          <p>50+</p>
-          <h3>Reels and Videos</h3>
-        </div>
-        <div class="about-us-followers-item">
-          <p>5+</p>
-          <h3>Projects</h3>
-        </div>
-      </div>
-      <p>Welcome to ikshiGenAI, a dynamic and forward-thinking club dedicated to exploring the limitless
-        possibilities of artificial intelligence and machine learning. At ikshiGenAI, we are a community of
-        passionate students, professionals, and enthusiasts who are committed to learning, innovating, and
-        sharing knowledge in the field of AI. Our mission is to foster a collaborative environment where
-        creativity meets technology, enabling members to develop cutting-edge AI solutions and contribute to the
-        advancement of this transformative field. Whether you are a seasoned expert or a curious beginner,
-        ikshiGenAI is the perfect place to grow, connect, and lead the future of AI.</p>
+      <img src="src/mission.png" alt="About Us" />
     </div>
   </div>
-  <!-- portfolio -->
-
-  <div class="portfolio-body">
-    <h3>Our Portfolio</h3>
-    <h2>Discover Our Recent <span class="highlight1">Projects</span><br> And <span class="highlight2">Showcases</span>
-    </h2>
-    <div class="project-card-container">
-      <div class="card-col">
-        <div class="card">
-          <a href="https://github.com/ikshigenaimitaoe/Our-Projects/tree/main/Asteroid-final">
-            <img src="src/asteroid.gif" alt="Project 1">
-            <div class="title-description">
-              <h4>Asteroid Detection</h4>
-              <p>Detection of Asteroids using OpenCV.</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://github.com/ikshigenaimitaoe/Our-Projects/tree/main/Flight-price-prediction%20using%20AWS%20SageMaker">
-            <img src="src/flight-preddiction.gif" alt="Project 2">
-            <div class="title-description">
-              <h4>Flight Price Prediction</h4>
-              <p>This model can accurately predict flight prices</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://github.com/ikshigenaimitaoe/Our-Projects/blob/main/intro_gemini_python-v1.0.0.ipynb">
-            <img src="src/vertex-ai.gif" alt="Project 3">
-            <div class="title-description">
-              <h4>Vertex AI</h4>
-              <p>Prompt and image anlysis with Vertex AI</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#">
-            <img src="src/portfolio-04.jpg" alt="Project 1">
-            <div class="title-description">
-              <h4>NA</h4>
-              <p>Short description for project 1.</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#">
-            <img src="src/portfolio-05.jpg" alt="Project 1">
-            <div class="title-description">
-              <h4>NA</h4>
-              <p>Short description for project 1.</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#">
-            <img src="src/portfolio-06.jpg" alt="Project 1">
-            <div class="title-description">
-              <h4>NA</h4>
-              <p>Short description for project 1.</p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#">
-            <img src="src/portfolio-01.jpg" alt="Project 1">
-            <div class="title-description">
-              <h4>NA</h4>
-              <p>Short description for project 1.</p>
-            </div>
-          </a>
-        </div>
+  <!-- About Us Card END -->
+  <!-- Our vision start -->
+  <div class="our-vision">
+    <div class="our-vision-image">
+      <img src="src/vision.png" alt="About Us" />
+    </div>
+    <div class="our-vision-content-wrapper">
+      <h2 id="our-vision-title">Our Vision See for yourself.</h2>
+      <div class="our-vision-content">
+        <p>
+          ikshiGen-AI is here to help students succeed in the growing field of
+          AI and ML. As these technologies reshape the world, we aim to be the
+          launchpad for students at MITAOE who want to build their careers in
+          this area. We believe in interactive learning and interactive
+          projects. Whether students are interested in research, working in
+          the industry, hardware or software, ikshiGen-AI offers the right
+          support, guidance, and practical experience. Our vision is to create
+          a strong community of AI enthusiasts and become the go-to place for
+          anyone with questions or ideas in this field. Let's shape the future
+          together!
+        </p>
       </div>
     </div>
-    <div class="scroll-button">
-      <button id="prev">&lt;</button>
-      <button id="next">&gt;</button>
+  </div>
+  <!-- our vision end -->
+  <!-- objective start -->
+  <div class="our-objective">
+    <div class="our-objective-content-wrapper">
+      <h2 id="our-objective-title">Objective. Checkmate.</h2>
+      <div class="our-objective-content">
+        <p>
+          ikshiGen-AI, the Artificial Intelligence Club of MITAOE, is a
+          community of passionate students eager to explore and apply AI. Our
+          club is a hub for students who are excited about learning, sharing
+          ideas, and using AI to solve both academic and real-world problems.
+          ikshiGen-AI aims to bring together bright minds who are ready to
+          push the boundaries of innovation, making it an ideal support for
+          the future of AI enthusiasts.
+        </p>
+      </div>
+    </div>
+    <div class="our-objective-image">
+      <img src="src/objective.png" alt="About Us" />
     </div>
   </div>
-
-
-
-
-  <!-- footer section -->
+  <!-- objective end -->
   <footer id="join-now">
     <div class="footer-section-innovation">
       <h2>FOLLOW US</h2>
@@ -187,9 +168,7 @@
       <h2>CONTACT US</h2>
       <p>+91 8484875370</p>
       <p>
-        <a href="mailto:contact.ikshigen@gmail.com">
-          ikshigenaimitaoe@gmail.com
-        </a>
+        <a href="mailto:contact.ikshigen@gmail.com">ikshigenaimitaoe@gmail.com</a>
       </p>
     </div>
     <div class="footer-section-competition">
@@ -203,9 +182,8 @@
         <button type="submit">Submit<img src="src/submit.png" alt=""></button>
     </div>
   </footer>
-  <script src="carousel.js"></script>
+
   <script src="app.js"></script>
-  <script src="aboutus.js"></script>
   <script src="menu.js"></script>
 </body>
 
