@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+</head>
+
+<body>
+  <div class="navbar">
+    <button onclick="fetchNews('AI Applications')">AI Applications</button>
+    <button onclick="fetchNews('Tesla')">Tesla</button>
+    <button onclick="fetchNews('Robotics')">Robotics</button>
+    <button onclick="fetchNews('General AI')">General AI</button>
+    <button onclick="fetchNews('Google AI')">Google</button>
+    <button onclick="fetchNews('Meta AI')">Meta</button>
+    <button onclick="fetchNews('OpenAI')">OpenAI</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search news...">
+    <button onclick="searchNews()">Search</button>
+  </div>
+
+  <div class="container">
+    <h1>AI-Related News</h1>
+    <div id="news-container" class="news-container">
+      <p>Loading news...</p>
+    </div>
+    <div id="fetch-time" class="fetch-time"></div> <!-- Added div for fetch time -->
+  </div>
+
+  <script src="index.js"></script> <!-- Link to JavaScript file -->
+</body>
+
+</html>
