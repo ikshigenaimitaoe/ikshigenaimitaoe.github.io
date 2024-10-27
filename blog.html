@@ -2,17 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blogs</title>
-  <link rel="stylesheet" href="css/blog.css" />
-  <link rel="stylesheet" href="css/header-footer-common.css" />
-  <link rel="icon" href="src/club-logo.png" type="image/png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Blogs - IkshiGen AI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header-footer-common.css">
+  <style>
+    .container {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1300px;
+      margin: 0 auto;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      flex: 0 0 300px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .tag {
+      background: #cccccc;
+      border-radius: 50px;
+      font-size: 12px;
+      margin: 0;
+      color: #fff;
+      padding: 2px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .tag-teal {
+      background-color: #47bcd4;
+    }
+
+    .tag-purple {
+      background-color: #5e76bf;
+    }
+
+    .tag-pink {
+      background-color: #cd5b9f;
+    }
+
+    .tag-red {
+      background-color: rgb(242, 89, 89);
+    }
+
+    .card-body p {
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .user img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .user-info h5 {
+      margin: 0;
+    }
+
+    .user-info small {
+      color: #545d7a;
+    }
+
+    .heading-blog {
+      cursor: pointer;
+    }
+
+    .heading-blog:hover {
+      opacity: 0.8;
+      color: #cd5b9f;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2.5em;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="pre-loader">
-    <img class="loading-gif" alt="loading" src="src/loading-screen.gif" />
+  <div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="src/loading-screen.gif" />
   </div>
   <header>
     <nav>
@@ -23,22 +127,22 @@
       <ul class="nav-links">
         <li><a href="aboutus.html" class="nav-link">About Us</a></li>
         <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
-        <li><a href="blog.html" class="nav-link active">Blogs</a></li>
+        <li><a href="blog.html" class="nav-link">Blogs</a></li>
         <li><a href="whatwedo.html" class="nav-link">What We Do</a></li>
         <li><a href="#join-now" class="nav-link">Join Us</a></li>
       </ul>
-      <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-          viewBox="0 -10 34 34">
+      <a class="menu-icon" onclick="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -10 34 34">
           <g fill="none">
             <path fill="currentColor"
               d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z" />
             <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
               d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5" />
           </g>
-        </svg></a>
+        </svg>
+      </a>
     </nav>
     <div class="dropdown-menu" id="dropdown-menu">
-      <a href="index.html">Home</a>
       <a href="aboutus.html">About Us</a>
       <a href="ourteam.html">Our Team</a>
       <a href="blog.html">Blogs</a>
@@ -46,64 +150,130 @@
       <a href="#join-now">Join Us</a>
     </div>
   </header>
-  <!-- post button -->
 
-<div class="container-btn">
- <a href="add.html"> <button id="addNewPost" class="btn">Post Blog</button></a>
-</div>
+  <h1 style="padding-top: 50px;">OUR BLOGS</h1>
 
-  <!-- Trending Posts Section -->
-  <!-- <section class="trending-posts">
-    <h2>Trending Posts</h2>
-    <div class="posts-slider">
-      <div class="post">
-        <img src="image1.jpg" alt="Post 1">
-        <h3>Do anything, but let it produce joy</h3>
-        <p>Awa Melvine | Jan 18, 2019</p>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <img src="src/blog-1image.png" alt="rover" />
       </div>
-      <div class="post">
-        <img src="image2.jpg" alt="Post 2">
-        <h3>One day your life will flash before your eyes</h3>
-        <p>Awa Melvine | Jan 18, 2019</p>
-      </div>
-      <div class="post">
-        <img src="image3.jpg" alt="Post 3">
-        <h3>That love is all there is, is all we know of love</h3>
-        <p>Awa Melvine | Jan 18, 2019</p>
-      </div>
-      <div class="post">
-        <img src="image3.jpg" alt="Post 3">
-        <h3>That love is all there is, is all we know of love</h3>
-        <p>Awa Melvine | Jan 18, 2019</p>
-      </div>
-      <div class="post">
-        <img src="image3.jpg" alt="Post 3">
-        <h3>That love is all there is, is all we know of love</h3>
-        <p>Awa Melvine | Jan 18, 2019</p>
+      <div class="card-body">
+        <span class="tag tag-teal">Generative AI</span>
+        <h4 class="heading-blog">
+          Transformer Architecture: A Comprehensive Guide.
+        </h4>
+        <p>
+          The Transformer architecture has transformed NLP by empowering models like T5, BERT, and GPT to excel in
+          language tasks.
+        </p>
+        <div class="user">
+          <img src="src/Kishore.jpg" alt="user" />
+          <div class="user-info">
+            <h5>Kishorekumar</h5>
+            <small>21st October 2024</small>
+          </div>
+        </div>
       </div>
     </div>
-  </section> -->
 
-  <!-- Recent Posts Section -->
-  <section class="recent-posts">
-    <h2>Recent Posts</h2>
-    <article>
-      <img src="src/portfolio-01.jpg" alt="Recent Post 1">
-      <h3>RAG Architecture: A Brief Overview</h3>
-      <p>Kishorekumar | 18th September, 2024</p>
-      <p>Framework that enhances generative models by incorporating a retrieval component...  </p>
-      <a href="#" class="read-more">Read More</a>
-    </article>
-    <article>
-      <img src="src/portfolio-02.jpg" alt="Recent Post 2">
-      <h3>Machine Learning Workflow Explained</h3>
-      <p>Harshad Gore| 1st October, 2024</p>
-      <p>Mastering the machine learning workflow is the key...."</p>
-      <a href="#" class="read-more">Read More</a>
-    </article>
-  </section>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg"
+          alt="ballons" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-purple">AI in R&D</span>
+        <h4 class="heading-blog">
+          How AI is Transforming the World of Research Papers?
+        </h4>
+        <p>
+          Artificial Intelligence (AI) is reshaping how researchers discover, access, and interpret scientific
+          literature, significantly accelerating the research process.
+        </p>
+        <div class="user">
+          <img src="src/Karthik.jpg" alt="user" />
+          <div class="user-info">
+            <h5>Karthik Edakkad</h5>
+            <small>22nd October 2024</small>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- footer section -->
+    <div class="card">
+      <div class="card-header">
+        <img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg"
+          alt="ballons" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-pink">Conversational AI</span>
+        <h4 class="heading-blog">
+          How Chatbots Work: The AI Behind Interactive Conversations
+        </h4>
+        <p>
+          With advancements in Natural Language Processing (NLP) and Machine Learning (ML), modern chatbots are more
+          intelligent and capable of holding natural, human-like conversations.
+        </p>
+        <div class="user">
+          <img src="src/sumit.jpg" alt="user" />
+          <div class="user-info">
+            <h5>Harshad Gore</h5>
+            <small>Yesterday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg"
+          alt="ballons" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-red">AI in R&D</span>
+        <h4 class="heading-blog">
+          The Impact of AI on Drug Discovery
+        </h4>
+        <p>
+          AI technologies are streamlining drug discovery, making it faster and more efficient by predicting how
+          different compounds will behave.
+        </p>
+        <div class="user">
+          <img src="src/sumit.jpg" alt="user" />
+          <div class="user-info">
+            <h5>Mohit Patil</h5>
+            <small>Yesterday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://www.newsbtc.com/wp-content/uploads/2020/06/mesut-kaya-LcCdl__-kO0-unsplash-scaled.jpg"
+          alt="ballons" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">Generative AI</span>
+        <h4 class="heading-blog">
+          Generative AI in Content Creation
+        </h4>
+        <p>
+          Generative AI tools are revolutionizing content creation by enabling creators to produce high-quality text,
+          images, and audio with minimal effort.
+        </p>
+        <div class="user">
+          <img src="src/sumit.jpg" alt="user" />
+          <div class="user-info">
+            <h5>Uber Shaikh</h5>
+            <small>Yesterday</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer id="join-now">
     <div class="footer-section-innovation">
       <h2>FOLLOW US</h2>
@@ -136,9 +306,12 @@
         <button type="submit">Submit<img src="src/submit.png" alt=""></button>
     </div>
   </footer>
+  <script src="carousel.js"></script>
   <script src="app.js"></script>
-  <script src="blog.js"></script>
+  <script src="aboutus.js"></script>
   <script src="menu.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
