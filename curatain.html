@@ -44,6 +44,7 @@
 			margin-left: -600px;
 			background-color: rgb(0, 0, 0);
 			box-shadow: 0 0 0 2px white inset;
+			transition: background-color 1.5s ease-in-out;
 		}
 
 		#curtain {
@@ -64,6 +65,7 @@
 			background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/950358/curtain.svg");
 			background-size: cover;
 			background-repeat: no-repeat;
+			transition: transform 2s ease-in-out;
 		}
 
 		#curtain .left {
@@ -126,26 +128,22 @@
 		#curtain.open .left,
 		#curtain.open .right {
 			filter: brightness(100%);
+			box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+			animation: curtain-glow 2s ease-in-out;
 		}
 
 		#curtain.open .left {
 			animation-fill-mode: forwards;
-			animation-name: curtain-opening, left-curtain-opening;
-			animation-duration: 2s, 4s;
-			animation-timing-function: ease-in-out, ease-in-out;
-			animation-delay: 0s, 0s;
-			animation-iteration-count: 1, 1;
-			animation-direction: normal, normal;
+			animation-name: left-curtain-opening;
+			animation-duration: 4s;
+			animation-timing-function: ease-in-out;
 		}
 
 		#curtain.open .right {
 			animation-fill-mode: forwards;
-			animation-name: curtain-opening, right-curtain-opening;
-			animation-duration: 2s, 4s;
-			animation-timing-function: ease-in-out, ease-in-out;
-			animation-delay: 0s, 0s;
-			animation-iteration-count: 1, 1;
-			animation-direction: normal, normal;
+			animation-name: right-curtain-opening;
+			animation-duration: 4s;
+			animation-timing-function: ease-in-out;
 		}
 
 		#scene.expand .ground {
@@ -168,24 +166,24 @@
 			animation-direction: normal, normal, alternate;
 		}
 
-		.fade-out {
-			animation-fill-mode: forwards;
-			animation-name: fade-out;
-			animation-duration: 1s;
-			animation-timing-function: ease-in;
-			animation-delay: 0s;
-			animation-iteration-count: 1;
-			animation-direction: normal;
+		/* Confetti Animation */
+		@keyframes confetti-fall {
+			0% {
+				opacity: 1;
+				transform: translateY(0) rotate(0deg);
+			}
+			100% {
+				opacity: 0;
+				transform: translateY(600px) rotate(720deg);
+			}
 		}
 
-		/* **********
-	animations
-********** */
+		.confetti {
+			position: absolute;
+			animation: confetti-fall 3s ease-in-out forwards;
+		}
 
 		@keyframes expand-scene-horizontaly {
-
-			/* 2.5
-	s */
 			from {
 				width: 1200px;
 				left: 50%;
@@ -204,8 +202,6 @@
 		}
 
 		@keyframes expand-scene-verticaly {
-
-			/* 1.5s */
 			from {
 				top: 50%;
 				height: 600px;
@@ -219,39 +215,23 @@
 			}
 		}
 
-		@keyframes curtain-opening {
-
-			/* 2s */
-			from {
-				filter: brightness(180%);
-			}
-
-			to {
-				filter: brightness(100%);
-			}
-		}
-
 		@keyframes left-curtain-opening {
-
-			/* 4s */
 			from {
 				transform: translate(0) rotate(0) scale(1, 1);
 			}
 
 			to {
-				transform: translate(-100%) rotate(20deg) scale(0, 2);
+				transform: translate(-120%) rotate(25deg) scale(0, 2);
 			}
 		}
 
 		@keyframes right-curtain-opening {
-
-			/* 4s */
 			from {
 				transform: translate(0) rotate(0) scale(1, 1);
 			}
 
 			to {
-				transform: translate(100%) rotate(-20deg) scale(0, 2);
+				transform: translate(120%) rotate(-25deg) scale(0, 2);
 			}
 		}
 
@@ -277,11 +257,13 @@
 
 		@keyframes text-fade-in {
 			from {
-				opacity: 0;
+					opacity: 0;
+				color: transparent;
 			}
 
 			to {
 				opacity: 1;
+				color: white;
 			}
 		}
 
@@ -306,6 +288,15 @@
 				opacity: 0;
 			}
 		}
+
+		@keyframes curtain-glow {
+			0% {
+				box-shadow: 0 0 5px rgba(255, 255, 255, 0);
+			}
+			100% {
+				box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+			}
+		}
 	</style>
 </head>
 
@@ -314,12 +305,10 @@
 
 	<div id="scene">
 		<div id="curtain">
-			<!-- <h1 style="justify-content: center;">Welcome!</h1 >  -->
 			<h1 style="text-align: center; font-size: 2em; color: white; font-family: 'Roboto Condensed', sans-serif;">
 				ikshi-GenAI
 			</h1>
 
-			<!-- Logo Image -->
 			<div style="text-align: center; margin-top: 10px;">
 				<img src="./src/club-logo.png" alt="ikshi-GenAI Logo" style="width: 150px; height: auto;" />
 			</div>
@@ -330,60 +319,72 @@
 		</div>
 	</div>
 
-
 	<script>
-		// Detect 'Enter' key press and trigger the animation
-		// Detect 'Enter' key press and trigger the animation
-		let enterPressCount = 0; // Track the number of 'Enter' presses
+		let enterPressCount = 0;
 
-		// Ensure the starter div gets focus when the page loads
 		document.body.onload = function () {
 			document.getElementById("starter").focus();
 		};
 
-		// Detect 'Enter' key press and handle events accordingly
 		document.addEventListener('keydown', function (event) {
 			if (event.key === 'Enter' || event.keyCode === 13) {
 				enterPressCount++;
 				if (enterPressCount === 1) {
-					showTime(); // Trigger initial animations
+					showTime();
 				} else if (enterPressCount === 2) {
-					finalAnimationAndRedirect(); // Trigger final animation and redirect
+					finalAnimationAndRedirect();
 				}
 			}
 		});
 
-		// Main function to trigger initial animations
 		function showTime() {
 			var curtain = document.getElementById("curtain");
 			var scene = document.getElementById("scene");
 			var starter = document.getElementById("starter");
 
-			// Add appropriate class names for animations
 			curtain.className = "open";
 			scene.className = "expand";
 			starter.className = "fade-out";
 
-			// Hide the starter text after 2 seconds
 			setTimeout(function () {
 				starter.style.display = 'none';
 			}, 2000);
+
+			createConfetti();
 		}
 
-		// Function to handle final animation and redirect to index.html
 		function finalAnimationAndRedirect() {
 			var scene = document.getElementById("scene");
 
-			// Apply a fade-out effect to the scene
 			scene.style.transition = 'opacity 2s';
 			scene.style.opacity = '0';
 
-			// Redirect to index.html after the fade-out animation completes
 			setTimeout(function () {
-				window.location.href = 'index.html'; // Redirect to the target page
-			}, 2000); // Match delay with fade-out transition
+				window.location.href = 'index.html';
+			}, 2000);
 		}
 
+		function createConfetti() {
+			const scene = document.getElementById("scene");
+			for (let i = 0; i < 100; i++) {
+				let confetti = document.createElement('div');
+				confetti.classList.add('confetti');
+				let size = Math.random() * 15 + 5; // Random size between 5px and 20px
+				confetti.style.width = `${size}px`;
+				confetti.style.height = `${size}px`;
+				confetti.style.backgroundColor = getRandomColor();
+				confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0'; // Random shape (circle or rectangle)
+				confetti.style.left = `${Math.random() * 100}%`;
+				confetti.style.top = `${Math.random() * 50}%`;
+				scene.appendChild(confetti);
+			}
+		}
+
+		// Generate random color for confetti
+		function getRandomColor() {
+			const colors = ['#ff6347', '#ffa500', '#4caf50', '#1e90ff', '#ee82ee'];
+			return colors[Math.floor(Math.random() * colors.length)];
+		}
 	</script>
 </body>
 
