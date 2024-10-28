@@ -2,192 +2,249 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Do</title>
-    <link rel="stylesheet" href="css/whatwedo.css">
-    <link rel="stylesheet" href="css/header-footer-common.css">
-    <script src="whatwedo.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="icon" href="src/club-logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What We Do</title>
+  <link rel="stylesheet" href="css/whatwedo.css">
+  <link rel="stylesheet" href="css/header-footer-common.css">
+  <script src="whatwedo.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="icon" href="src/club-logo.png" type="image/png">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
 <body>
 
-    <div class='pre-loader'>
-        <img class='loading-gif' alt='loading' src="src/loading-screen.gif" />
+  <div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="src/loading-screen.gif" />
+  </div>
+
+  <!-- Navbar with Inline Style -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="src/club-logo.png" alt="logo" /></a>
+        <a href="index.html">ikshiGen AI</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+        <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
+        <li><a href="blog.html" class="nav-link">Blogs</a></li>
+        <li><a href="whatwedo.html" class="nav-link active">What We Do</a></li>
+        <li><a href="#join-now" class="nav-link">Join Us</a></li>
+      </ul>
+      <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+          viewBox="0 -10 34 34">
+          <g fill="none">
+            <path fill="currentColor"
+              d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+              d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5" />
+          </g>
+        </svg></a>
+    </nav>
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="ourteam.html">Our Team</a>
+      <a href="blog/dist/index.html">Blogs</a>
+      <a href="whatwedo.html">What We Do</a>
+      <a href="#join-now">Join Us</a>
     </div>
+  </header>
+  <!-- Header Above-->
 
-    <!-- Navbar with Inline Style -->
-    <header>
-        <nav>
-          <div class="logo">
-            <a href="index.html"><img src="src/club-logo.png" alt="logo" /></a>
-            <a href="index.html">ikshiGen AI</a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="aboutus.html" class="nav-link">About Us</a></li>
-            <li><a href="ourteam.html" class="nav-link">Our Team</a></li>
-            <li><a href="blog.html" class="nav-link">Blogs</a></li>
-            <li><a href="whatwedo.html" class="nav-link active">What We Do</a></li>
-            <li><a href="#join-now" class="nav-link">Join Us</a></li>
-          </ul>
-          <a class="menu-icon" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 -10 34 34">
-            <g fill="none">
-              <path fill="currentColor" d="M9 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/>
-              <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M7 3.338A9.954 9.954 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/>
-            </g>
-          </svg></a>
-        </nav>
-        <div class="dropdown-menu" id="dropdown-menu">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About Us</a>
-          <a href="ourteam.html">Our Team</a>
-          <a href="blog/dist/index.html">Blogs</a>
-          <a href="whatwedo.html">What We Do</a>
-          <a href="#join-now">Join Us</a>
-        </div>
-      </header>
-    <br><br><br>
-
-
-
-    <!-- Main Content -->
-
-    <div class="container">
-        <h1 class="title">Boom of Artificial Intelligence</h1>
-        <div class="boxes">
-            <div class="box" onclick="openModal('modalAgriculture')">
-                <h2>Agriculture</h2>
-                <p>AI has been increasingly applied in agriculture to enhance productivity, efficiency, and
-                    sustainability.</p>
-            </div>
-            <div class="box" onclick="openModal('modalSpace')">
-                <h2>Space Exploration</h2>
-                <p>AI in space exploration helps rovers navigate, analyze data, and make autonomous decisions.</p>
-            </div>
-            <div class="box" onclick="openModal('modalFashion')">
-                <h2>Fashion Design</h2>
-                <p>AI in fashion design creates unique styles by analyzing trends and generating new clothing patterns.
-                </p>
-            </div>
-            <div class="box" onclick="openModal('modalEducation')">
-                <h2>Personalized Education</h2>
-                <p>AI in personalized education adapts learning content to each student's pace, strengths, and needs.
-                </p>
-            </div>
-        </div>
+  <!-- the div goes here -->
+  <div class="countdown-container">
+    <div class="countdown">
+      <div class="time-unit">
+        <div id="days" class="time">00</div>
+        <div class="label">Days</div>
+      </div>
+      <div class="time-unit">
+        <div id="hours" class="time">00</div>
+        <div class="label">Hours</div>
+      </div>
+      <div class="time-unit">
+        <div id="minutes" class="time">00</div>
+        <div class="label">Minutes</div>
+      </div>
+      <div class="time-unit">
+        <div id="seconds" class="time">00</div>
+        <div class="label">Seconds</div>
+      </div>
     </div>
-
-    <!-- Modals -->
-    <div id="modalAgriculture" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalAgriculture')">&times;</span>
-            <h2>Agriculture</h2>
-            <p>More detailed information about AI applications in agriculture...</p>
-        </div>
+    <h1 class="workshop-title">FIRST WORKSHOP OF <span class="highlight">ikshiGen AI</span></h1>
+    <p class="workshop-subtitle">PLEASE, BE PRESENT, ALL CURIOUS MINDS.</p>
+    <div class="buttons">
+      <a href="#join-now"><button>Join Now</button></a>
     </div>
+  </div>
+  <!--  -->
 
-    <div id="modalSpace" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalSpace')">&times;</span>
-            <h2>Space Exploration</h2>
-            <p>More detailed information about AI applications in space exploration...</p>
-        </div>
+  <section class="why-join-section">
+    <h2>Why You Should Join IkshiGen-AI</h2>
+    <p class="description">At IkshiGen-AI, our mission is to build a vibrant community of AI and ML enthusiasts at
+      MITAOE.</p>
+
+    <div class="why-join-cards">
+      <div class="card">
+        <div class="icon">01</div>
+        <h3>Engaging Workshops</h3>
+        <p>Participate in interactive workshops that give you hands-on experience in AI/ML, helping you build real-world
+          skills and projects.</p>
+      </div>
+      <div class="card">
+        <div class="icon">02</div>
+        <h3>Connect with Peers</h3>
+        <p>Meet other AI and ML enthusiasts at MITAOE, building a network of like-minded individuals passionate about
+          the future of technology.</p>
+      </div>
+      <div class="card">
+        <div class="icon">03</div>
+        <h3>Inspiring Events</h3>
+        <p>Attend events featuring talks from industry and academic leaders, giving you insights and inspiration to
+          excel in AI and ML.</p>
+      </div>
+      <div class="card">
+        <div class="icon">04</div>
+        <h3>Innovative Projects</h3>
+        <p>Work on collaborative projects that encourage innovative problem-solving, pushing the boundaries of AI and ML
+          applications.</p>
+      </div>
+      <div class="card">
+        <div class="icon">05</div>
+        <h3>Networking Opportunities</h3>
+        <p>Take part in networking sessions that provide valuable connections with industry professionals and other
+          students.</p>
+      </div>
+      <div class="card">
+        <div class="icon">06</div>
+        <h3>Multidisciplinary Collaboration</h3>
+        <p>Our vision is to become an AI/ML hub where students from all disciplines collaborate on meaningful research
+          and innovations.</p>
+      </div>
     </div>
+  </section>
 
-    <div id="modalFashion" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalFashion')">&times;</span>
-            <h2>Fashion Design</h2>
-            <p>More detailed information about AI applications in fashion design...</p>
+  <!-- Previous Events -->
+
+  <section class="events-section">
+    <h2><span class="highlight2">[</span>Past Events<span class="highlight2">]</span></h2>
+    <p class="description">Explore some of our previous events.</p>
+    <!-- Event Cards Grid -->
+    <div class="events-grid">
+      <div class="event-card" onclick="showEventDetails('event1')">
+        <img src="src/event-1st.gif" alt="Event 1">
+        <div class="event-overlay">
+          <h3>Inauguration</h3>
+          <button onclick="showEventDetails('event1')">Read More</button>
         </div>
+      </div>
+      <div class="event-card" onclick="showEventDetails('event2')">
+        <img src="src/event-2nd.gif" alt="Event 2">
+        <div class="event-overlay">
+          <h3>Interview</h3>
+          <button onclick="showEventDetails('event2')">Read More</button>
+        </div>
+      </div>
+      <!-- Add more event cards as needed -->
     </div>
-
-    <div id="modalEducation" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modalEducation')">&times;</span>
-            <h2>Personalized Education</h2>
-            <p>More detailed information about AI applications in personalized education...</p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <hr>
-    <br>
-
-    <!-- Activity Page Section -->
-    <section id="activity-page">
-        <h1>Activity Page</h1>
-        <div class="web-chart">
-            <div class="task">Activities</div>
-            <div class="task task1" onclick="scrollToContent('task1')">Activity 1</div>
-            <div class="task task2" onclick="scrollToContent('task2')">Activity 2</div>
-            <div class="task task3" onclick="scrollToContent('task3')">Activity 3</div>
-            <div class="task task4" onclick="scrollToContent('task4')">Activity 4</div>
-        </div>
-
-        <!-- Task Details (Hidden initially) -->
-        <div class="task-content" id="task1">
-            <h2>Activity 1 Details</h2>
-            <p>More information about Task 1...</p>
-        </div>
-        <div class="task-content" id="task2">
-            <h2>Activity 2 Details</h2>
-            <p>More information about Task 2...</p>
-        </div>
-        <div class="task-content" id="task3">
-            <h2>Activity 3 Details</h2>
-            <p>More information about Task 3...</p>
-        </div>
-        <div class="task-content" id="task4">
-            <h2>Activity 4 Details</h2>
-            <p>More information about Task 4...</p>
-        </div>
-    </section>
-
-  
-
-    <!-- All Projects Section -->
-    <!-- All Projects Section -->
-
-
-    <!-- Why Join Us Section -->
-
-    <!-- Footer Section -->
-    <footer id="join-now">
-        <div class="footer-section-innovation">
-          <h2>FOLLOW US</h2>
-          <p>Follow us on.</p>
-          <div class="footer-social-icons">
-            <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png" alt="Linked In" /></a>
-            <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
-          </div>
-        </div>
-        <div class="footer-section-excellence">
-          <h2>CONTACT US</h2>
-          <p>+91 8484875370</p>
-          <p>
-            <a href="mailto:ikshigenai@mitaoe.ac.in">
-              ikshigenai@mitaoe.ac.in
-            </a>
+    <!-- Event Details Section -->
+    <div class="gallery_1" unique-script-id="event1" style="display: none;">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <p class="text-blk heading">
+            Inauguration of the <span class="highlight3">ikshiGen AI</span>
           </p>
+          <p class="text-blk subHeading">
+            The inauguration of the ikshiGen AI club was a momentous occasion, marking the beginning of a new era in AI
+            innovation and collaboration.
+          </p>
+          <div class="responsive-container-block imgContainer">
+            <div class="project project1">
+              <img class="smallImage" src="src/event-img1.jpg">
+            </div>
+            <div class="project project2">
+              <img class="smallImage" src="src/event-img2.jpg">
+            </div>
+            <div class="project project3">
+              <img class="smallImage" src="src/event-img3.jpg">
+            </div>
+            <div class="project project4">
+              <img class="smallImage" src="src/event-img4.JPG">
+            </div>
+            <div class="project project5">
+              <img class="smallImage" src="src/event-img6.JPG">
+            </div>
+            <div class="project project6">
+              <img class="smallImage" src="src/event-img5.JPG">
+            </div>
+          </div>
         </div>
-        <div class="footer-section-competition">
-          <h2>JOIN NOW</h2>
-              <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-              <input type="hidden" name="access_key" value="5be24f75-7067-4a2c-bb1b-c2a04c63d195">
-              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-              <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
-              <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
-              <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
-              <button type="submit">Submit<img src="src/submit.png" alt=""></button>
-        </div>
-      </footer>
-    <script src="app.js"></script>
-    <script src="menu.js"></script>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <footer id="join-now">
+    <div class="footer-section-innovation">
+      <h2>FOLLOW US</h2>
+      <p>Follow us on.</p>
+      <div class="footer-social-icons">
+        <a href="https://www.linkedin.com/company/ikshigenaimitaoe/?viewAsMember=true"><img src="src/inlogo.png"
+            alt="Linked In" /></a>
+        <a href="https://www.instagram.com/ikshigen_ai_mitaoe/?hl=en"><img src="src/Instagram.png"
+            alt="Instagram" /></a>
+        <a href="#"><img src="src/twitter.png" alt="Twitter" /></a>
+      </div>
+    </div>
+    <div class="footer-section-excellence">
+      <h2>CONTACT US</h2>
+      <p>+91 8484875370</p>
+      <p>
+        <a href="mailto:ikshigenai@mitaoe.ac.in">
+          ikshigenai@mitaoe.ac.in
+        </a>
+      </p>
+    </div>
+    <div class="footer-section-competition">
+      <h2>JOIN NOW</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="5be24f75-7067-4a2c-bb1b-c2a04c63d195">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <input type="tel" name="contact" placeholder="Your Contact" class="contact-inputs" required>
+        <textarea name="message" placeholder="Collaborate With Us..." class="contact-inputs" required></textarea>
+        <button type="submit">Submit<img src="src/submit.png" alt=""></button>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script src="menu.js"></script>
+  <script src="whatwedo.js"></script>
+  <!--====== jquery js ======-->
+  <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script> -->
 </body>
 
 </html>
