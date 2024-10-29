@@ -63,7 +63,16 @@ button:hover {
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
-
+.countdown h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:poppins;
+    margin: 10px 0;
+    background: linear-gradient(to right, #ff0000, #ffa500, #00bfff, #32cd32);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 .time-unit {
     display: flex;
     flex-direction: column;

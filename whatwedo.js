@@ -1,7 +1,7 @@
 // script.js
 
 // Set the target date and time for the event
-// const targetDate = new Date("2024-12-31T23:59:59").getTime();
+// const targetDate = new Date("2024-10-29T21:08:00").getTime();
 
 // Function to calculate and update the countdown timer
 function updateCountdown() {
@@ -20,7 +20,7 @@ function updateCountdown() {
         document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
     } else {
         // Optionally, display a message when the countdown reaches zero
-        document.querySelector(".countdown").innerHTML = "<p>Event Started!</p>";
+        document.querySelector(".countdown").innerHTML = "<h1>Event Started!</h1>";
     }
 }
 

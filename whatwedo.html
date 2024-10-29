@@ -135,8 +135,7 @@
   </section>
 
   <!-- Previous Events -->
-
-  <section class="events-section">
+  <section class="events-section" id="events-body">
     <h2><span class="highlight2">[</span>Past Events<span class="highlight2">]</span></h2>
     <p class="description">Explore some of our previous events.</p>
     <!-- Event Cards Grid -->
@@ -145,20 +144,20 @@
         <img src="src/event-1st.gif" alt="Event 1">
         <div class="event-overlay">
           <h3>Inauguration</h3>
-          <button onclick="showEventDetails('event1')">Read More</button>
+          <a href="#event-no1"><button onclick="showEventDetails('event1')">Read More</button></a>
         </div>
       </div>
       <div class="event-card" onclick="showEventDetails('event2')">
         <img src="src/event-2nd.gif" alt="Event 2">
         <div class="event-overlay">
           <h3>Interview</h3>
-          <button onclick="showEventDetails('event2')">Read More</button>
+          <a href="#event-no2"><button onclick="showEventDetails('event2')">Read More</button></a>
         </div>
       </div>
       <!-- Add more event cards as needed -->
     </div>
     <!-- Event Details Section -->
-    <div class="gallery_1" unique-script-id="event1" style="display: none;">
+    <div class="gallery_1" unique-script-id="event1" style="display: none;" id="event-no1">
       <div class="responsive-container-block bigContainer">
         <div class="responsive-container-block Container">
           <p class="text-blk heading">
@@ -191,7 +190,7 @@
         </div>
       </div>
     </div>
-    <div class="gallery_1" unique-script-id="event2" style="display: none;">
+    <div class="gallery_1" unique-script-id="event2" style="display: none;" id="event-no2">
       <div class="responsive-container-block bigContainer">
         <div class="responsive-container-block Container">
           <p class="text-blk heading">
